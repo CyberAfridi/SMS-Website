@@ -1,7 +1,7 @@
 <div class="hero-section d-flex justify-content-between align-items-center py-5 container-fluid ps-5">
     <!-- Text Content -->
     <div class="col-8 hero-content">
-        <h1 class="display-1 m-0">Welcome to CyberAfridi School</h1>
+        <h1 class="display-1 text-3xl m-0">Welcome to CyberAfridi School</h1>
         <p class="hero-subtitle">Welcome to CyberAfridi School – a tech-driven learning hub where students excel through innovative
                 education. We empower young minds with digital skills, STEM programs, and personalized learning,
                 preparing them to thrive in a rapidly evolving world.</p>

@@ -1,42 +1,58 @@
+<?php include_once 'config/config.php'; ?>
 <?php
-session_start(); // Start the session to check if the user is logged in
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Get the name of the current file
+$currentPage = basename($_SERVER['PHP_SELF']);
 ?>
-    <!-- Header -->
-    <?php include_once 'views/layout/header.php'; ?>
-<hr>
+<!-- echo APP_ADMIN_URL; -->
+<!-- Header -->
+<?php include_once APP_HEADER_FILE; ?>
+<!-- <hr> -->
 
 <body>
     <main>
         <!-- Intro Section -->
         <section id="intro">
-            <?php include 'views/sections/intro.php'; ?>
+            <?php include APP_SEC_INTRO_FILE; ?>
         </section>
         <hr>
-        <!-- new Section -->
-        <section id="port" class="pb-3">
-            <?php include 'views/sections/port.php'; ?>
+        <!-- Count and Portals Section -->
+        <!-- <section id="port" class="pb-3">
+            <?php //include APP_SEC_CP_FILE; 
+            ?>
         </section>
-        <hr>
+        <hr> -->
         <!-- Quote Section -->
-        <section id="quote">
-            <?php include 'views/sections/quote.php'; ?>
+        <!-- <section id="quote">
+            <?php //include APP_SEC_QUO_FILE; 
+            ?>
         </section>
-        <hr>
+        <hr> -->
         <!-- Features Section -->
         <section id="features" class="pb-3">
-            <?php include 'views/sections/features.php'; ?>
+            <?php include APP_SEC_FEAT_FILE; ?>
         </section>
         <hr>
         <!-- Visitor Count -->
         <!-- Reviews Section -->
         <section id="reviews">
-            <?php include 'views/sections/review.php'; ?>
+            <?php include APP_SEC_REVI_FILE; ?>
         </section>
         <hr>
         <!-- contact Section -->
         <section id="form" class="pb-3">
-            <?php include 'views/sections/contact.php'; ?>
+            <?php include APP_SEC_CONT_FILE; ?>
         </section>
+        <!-- Academic Calender Section -->
+        <!-- <section id="" class="">
+            <?php //include ; ?>
+        </section> -->
+        <!-- Notice Board Section -->
+        <!-- <section id="" class="">
+            <?php //include ; ?>
+        </section> -->
         <!-- <hr> -->
         <!-- Popups Section -->
         <section id="popups">
@@ -44,9 +60,7 @@ session_start(); // Start the session to check if the user is logged in
         </section>
     </main>
 </body>
-<footer id="footer">
-    <!-- Footer -->
-    <?php include_once 'views/layout/footer.php'; ?>
-</footer>
+<!-- Footer -->
+<?php include_once APP_FOOTER_FILE; ?>
 
 </html>

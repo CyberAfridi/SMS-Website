@@ -2,7 +2,7 @@
   <div class="row gx-5 justify-content-between align-content-center align-items-center d-flex text-center">
   <div class="col-6">
       <h2 class="text-center co-text-shadow co-und-hov">Innovators</h2>
-      <div id="carouselInnovators" class="carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="300">
+      <div id="carouselInnovators" class="carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselInnovators" data-bs-slide-to="0" class="active" aria-current="true"></button>
           <button type="button" data-bs-target="#carouselInnovators" data-bs-slide-to="1" class=""></button>
@@ -76,7 +76,7 @@
 
     <div class="col-6">
       <h2 class=" text-center co-text-shadow co-und-hov">Parents</h2>
-      <div id="carouselParents" class="carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="3000">
+      <div id="carouselParents" class="carousel slide d-flex" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselParents" data-bs-slide-to="0" class="active" aria-current="true"></button>
           <button type="button" data-bs-target="#carouselParents" data-bs-slide-to="1" class=""></button>
