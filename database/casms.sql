@@ -99,10 +99,36 @@ INSERT INTO `daily_attendance` (`id`, `username`, `date`, `attendance_status`, `
 --
 -- Triggers `daily_attendance`
 --
+-- DELIMITER $$
+-- CREATE TRIGGER `update_my_attendance` AFTER INSERT ON `daily_attendance` FOR EACH ROW BEGIN
+--     DECLARE present_count INT$$
+-- DELIMITER ;
+
 DELIMITER $$
-CREATE TRIGGER `update_my_attendance` AFTER INSERT ON `daily_attendance` FOR EACH ROW BEGIN
-    DECLARE present_count INT$$
+
+CREATE TRIGGER `update_my_attendance` 
+AFTER INSERT ON `daily_attendance`
+FOR EACH ROW
+BEGIN
+    DECLARE present_count INT;
+
+    -- Example logic: Count how many 'present' days this user has in the month and year of the new entry
+    SELECT COUNT(*) INTO present_count
+    FROM daily_attendance
+    WHERE username = NEW.username
+      AND YEAR(`date`) = YEAR(NEW.date)
+      AND MONTH(`date`) = MONTH(NEW.date)
+      AND attendance_status = 'present';
+
+    -- Insert or update the attendance summary
+    INSERT INTO attendance (username, year, month, present_days)
+    VALUES (NEW.username, YEAR(NEW.date), MONTH(NEW.date), present_count)
+    ON DUPLICATE KEY UPDATE present_days = present_count;
+
+END $$
+
 DELIMITER ;
+
 
 -- --------------------------------------------------------
 

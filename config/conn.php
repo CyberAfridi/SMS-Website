@@ -1,8 +1,10 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-$username = "casql";
-$password = "admin";
+$username = "root";
+$password = "";
+// $username = "casql";
+// $password = "admin";
 //$dbname = "cae";
 $dbname = "casms";
 

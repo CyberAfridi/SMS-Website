@@ -9,12 +9,12 @@
             </a>
         </div>
 
-        <!-- Notice Board -->
+        <!-- Notice Board
         <div class="nav-item" title="Manage Notice Board">
             <a href="pages/notice_board.php" aria-label="Notice Board">
                 <i class="fas fa-clipboard-list text-white"></i>
             </a>
-        </div>
+        </div> -->
 
         <!-- Teachers -->
         <div class="nav-item" title="Manage Teachers">

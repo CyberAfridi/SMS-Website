@@ -227,6 +227,80 @@ footer {
   max-width: 15rem;
 }
 
+  /* Features Section */
+#features .features-section {
+  background-color: var(--primary-blue);
+  border-radius: 20px;
+  padding: 50px !important;
+  box-shadow: 0 0px 30px gray;
+}
+
+#features .feature-card {
+  background-color: var(--accent-orange);
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px gray;
+}
+
+#features .feature-card:hover {
+    transform: translateY(-10px);
+}
+
+#features .feature-card h3,
+#features .feature-card p {
+  transition: transform 0.5s;
+}
+
+#features .feature-card:hover h3 {
+  color: white;
+  opacity: 0.7;
+}
+
+#features .feature-card:hover p {
+  color: black !important;
+  opacity: 0.7;
+}
+
+#features .feature-card .feature-icon {
+  font-size: 2rem;
+  color: gray;
+  /* Gray for feature icons */
+}
+
+#features .start-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(75, 75, 75, 1) 0%,
+    rgba(150, 150, 150, 1) 100%
+  );
+  border: none;
+  color: white;
+  /* Button text is white */
+}
+
+#features button.co-btn-inqui {
+  border: none;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  font-weight: bold;
+}
+
+#FeaturesCarousel .carousel-indicators button {
+  /* background-color: var(--accent-orange); */
+  background-color: var(--primary-blue);
+  border: none;
+  opacity: 0.5;
+  transition: background-color 0.3s, opacity 0.3s;
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+#FeaturesCarousel .carousel-indicators button:hover {
+  background-color: var(--bg-white);
+}
+
 /* quote section */
 section#quote {
   display: flex;
@@ -285,8 +359,6 @@ div#carousel-quo {
   color: #555;
   text-align: justify;
 }
-
-/* Feature Section */
 
 /* Review Section */
 #reviews .col-6 {
@@ -386,6 +458,7 @@ div#carousel-quo {
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
+  background-color: #e6f1e8e0;
 }
 
 #form .contact-form button {
@@ -395,10 +468,14 @@ div#carousel-quo {
   border-radius: 5px;
   font-size: 1em;
   cursor: pointer;
+  background-color: #e6f1e8e0;
+
 }
 
 #form .contact-form button:hover {
-  background-color: var(--text-dark-gray) !important;
+  /* background-color: var(--text-dark-gray) !important; */
+  background-color: var(--primary-blue) !important;
+  color: var(--bg-white) !important;
 }
 
 /* Tabbed Contact Info */
@@ -419,12 +496,9 @@ div#carousel-quo {
   color: #333333;
 }
 
-#form .tab-menu button:hover {
-  color: white;
-}
-
 #form .tab-menu .active {
   border-bottom: 2px solid;
+    color: white;
 }
 
 #form .tab-content {

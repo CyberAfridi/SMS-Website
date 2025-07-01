@@ -7,6 +7,7 @@
                     education. We empower young minds with digital skills, STEM programs, and personalized learning,
                     preparing them to thrive in a rapidly evolving world.</p>
                 <p>&copy; <?php echo date('Y'); ?> CyberAfridi Ltd. - All rights reserved.</p>
+				<small>version:<?= '2025.06.30';?></small>
             </div>
         </div>
         <div class="footer-section">

@@ -1,3 +1,58 @@
+<style>
+  /* Review Section */
+  #reviews .col-6 {
+    justify-items: center;
+    display: grid;
+  }
+
+
+  #carouselInnovators {
+    border: solid var(--primary-blue);
+    border-radius: 2rem;
+    max-width: 30rem;
+    padding: 2rem;
+    min-width: 30rem;
+  }
+
+  #carouselInnovators .review-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  #carouselInnovators .carousel-indicators [data-bs-target] {
+    background-color: var(--accent-orange);
+  }
+
+  #carouselInnovators .carousel-item {
+    min-width: 15rem;
+    max-width: 30rem;
+  }
+
+  #carouselParents {
+    border: solid var(--accent-orange);
+    border-radius: 2rem;
+    max-width: 30rem;
+    padding: 2rem;
+    min-width: 30rem;
+  }
+
+  #carouselParents .review-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+
+  #carouselParents .carousel-indicators [data-bs-target] {
+    background-color: var(--primary-blue);
+  }
+
+  #carouselParents #carouselInnovators .carousel-item {
+    min-width: 15rem;
+    max-width: 30rem;
+  }
+</style>
+
 <div class="container">
   <div class="row gx-5 justify-content-between align-content-center align-items-center d-flex text-center">
   <div class="col-6">
