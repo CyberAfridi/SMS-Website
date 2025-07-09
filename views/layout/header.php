@@ -23,7 +23,7 @@ function getPortalLink($sessionKey, $loggedInPage, $loginPage)
               <a class="nav-link btn <?php echo basename($_SERVER['SCRIPT_NAME']) == 'index.php' ? 'active' : ''; ?>" href="<?php echo APP_ROOT_URL; ?>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link btn ms-2 <?php echo basename($_SERVER['SCRIPT_NAME']) == 'about.php' ? 'active' : ''; ?>" href="<?php echo APP_PAGES_URL . '/about.php' ?>">About</a>
+              <a class="nav-link btn ms-2 <?php echo basename($_SERVER['SCRIPT_NAME']) == 'about.php' ? 'active' : ''; ?>" href="<?php echo APP_VIEWS_URL . '/pages/about.php' ?>">About</a>
             </li>
           </ul>
         </div>
