@@ -1,11 +1,4 @@
 <?php require_once __DIR__ . '/config/config.php'; ?>
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-// Get the name of the current file
-$currentPage = basename($_SERVER['PHP_SELF']);
-?>
 <!-- Header -->
 <?php require_once APP_HEADER_URL; ?>
 <body>
